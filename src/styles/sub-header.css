@@ -1,0 +1,41 @@
+.app-sub-header {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 0 16px;
+    background: var(--color-secundary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app-sub-header__button {
+    width: auto;
+    height: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: var(--color-secundary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-header-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.app-sub-header__button-text-right {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    margin-left: 8px;
+}
+
+.app-sub-header__button-text-left {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    margin-right: 8px;
+}

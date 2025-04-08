@@ -1,6 +1,5 @@
-import './styles/base.css'
-import './styles/header.css'
-import { RequestService } from "./http/request.service.js"
+import './styles/styles.js';
+import { RequestService } from "./http/request.service.js";
 
 /* document.querySelector('#app').innerHTML = `
   <div>
