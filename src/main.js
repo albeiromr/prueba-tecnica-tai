@@ -11,7 +11,7 @@ loader.classList.add('loader-parent-visible');
 
 const data = await RequestService.fetchLoadTFunction();
 
-loader.classList.remove('loader-parent-vissible');
+loader.classList.remove('loader-parent-visible');
 loader.classList.add('loader-parent-hidden');
 
 mainContent.classList.remove('main-content-hidden');
