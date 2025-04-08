@@ -1,6 +1,12 @@
 :root {
   --color-primary: #fe7230;
   --color-secundary: #806458;
+  --color-third: #585A80;
+  --color-fourth: #638058;
+
+  --gray-medium: #565656;
+
+  --border-radius-medium: 8px;
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -43,5 +49,10 @@ body {
   margin: 0 auto;
   min-height: calc(100vh - 65px);
   background: #f5f5f5;
+  display: grid;
+  padding: 16px;
+  grid-template-columns: repeat(3 , 1fr);
+  column-gap: 16px;
+  row-gap: 16px;
 }
 

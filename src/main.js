@@ -1,22 +1,14 @@
 import './styles/styles.js';
 import { RequestService } from "./http/request.service.js";
+import { Card } from './components/card.component.js';
+import {data } from './mockdata.js';
 
-/* document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+//const data = await RequestService.fetchLoadTFunction();
 
-setupCounter(document.querySelector('#counter')) */
+const mainContent = document.querySelector('#app').querySelector('#main-content');
+mainContent.innerHTML = '';
+
+for (let i = 0; i < data.Payload.length; i++) {
+  const card = new Card(data.Payload[i]);
+  mainContent.innerHTML += card.render();
+}
