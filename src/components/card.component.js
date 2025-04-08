@@ -44,8 +44,8 @@ export class Card {
                 <div class="card-divider"></div>
 
                 <div class="card-sit-color">
-                    <div class="card-sub-value">
-                        <span class="card-sub-value__value">Color</span>
+                    <div class="card-color-key">
+                        <span class="card-color-key__value">Color</span>
                     </div>
                     <div class="card-mix-value">${this.data.workunits[0].sitcolor}</div>
                 </div>
