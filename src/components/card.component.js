@@ -1,5 +1,5 @@
 /**
- * Representa una tarjeta usada para mostrar datos en la interfaz de usuario.
+ * Representa una tarjeta para mostrar datos en la interfaz de usuario.
  */
 export class Card {
     data;

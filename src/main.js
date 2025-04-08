@@ -1,11 +1,21 @@
 import './styles/styles.js';
 import { RequestService } from "./http/request.service.js";
 import { Card } from './components/card.component.js';
-import {data } from './mockdata.js';
 
-//const data = await RequestService.fetchLoadTFunction();
 
 const mainContent = document.querySelector('#app').querySelector('#main-content');
+const loader = document.querySelector('#app').querySelector('#loader-parent');
+
+loader.classList.remove('loader-parent-hidden');
+loader.classList.add('loader-parent-visible');
+
+const data = await RequestService.fetchLoadTFunction();
+
+loader.classList.remove('loader-parent-vissible');
+loader.classList.add('loader-parent-hidden');
+
+mainContent.classList.remove('main-content-hidden');
+mainContent.classList.add('main-content-visible');
 mainContent.innerHTML = '';
 
 for (let i = 0; i < data.Payload.length; i++) {
